@@ -1,0 +1,22 @@
+NGUON ANH VA VIDEO SU DUNG TRONG WEBSITE
+
+1. Ha Long Bay image:
+https://www.paradisevietnam.com/public/backend/uploads/images/what-about-ha-long-bay-4.jpg
+Nguon trang: Paradise Vietnam
+
+2. Phong Nha image:
+https://vietnam.travel/sites/default/files/inline-images/pn.jpg
+Nguon trang: Vietnam Tourism
+
+3. Mang Den image:
+https://vietnam.travel/sites/default/files/inline-images/shutterstock_2152034161.jpg
+Nguon trang: Vietnam Tourism
+
+4. Mekong Delta image:
+https://vietnam.travel/sites/default/files/inline-images/Mekong%20Delta%20Travel%20Guide-6_0.jpg
+Nguon trang: Vietnam Tourism
+
+5. Video minh hoa:
+https://www.youtube.com/embed/dD4wM3Ex4kM
+
+Neu can dung offline, tai cac anh ve thu muc images/ va doi duong dan trong HTML/CSS.

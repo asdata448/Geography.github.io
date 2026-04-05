@@ -1,0 +1,122 @@
+:root {
+  --primary: #0f4c81;
+  --primary-dark: #0a3558;
+  --accent: #f0a500;
+  --bg: #f5f8fb;
+  --text: #1f2d3d;
+  --white: #ffffff;
+  --soft: #e7eef5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; border-radius: 18px; }
+.container { width: min(1120px, 92%); margin: auto; }
+header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(10, 53, 88, 0.92);
+  backdrop-filter: blur(8px);
+}
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 0;
+}
+.logo {
+  font-size: 1.2rem; font-weight: bold; color: var(--white);
+}
+nav ul {
+  list-style: none; margin: 0; padding: 0; display: flex; gap: 18px; flex-wrap: wrap;
+}
+nav a {
+  color: var(--white); padding: 8px 12px; border-radius: 999px;
+}
+nav a:hover, nav a.active { background: rgba(255,255,255,0.15); }
+.hero {
+  min-height: 82vh;
+  color: var(--white);
+  display: flex; align-items: center;
+  background:
+    linear-gradient(rgba(7,25,44,0.55), rgba(7,25,44,0.55)),
+    url('https://www.paradisevietnam.com/public/backend/uploads/images/what-about-ha-long-bay-4.jpg') center/cover no-repeat;
+}
+.hero-content { max-width: 720px; }
+.hero h1 { font-size: clamp(2.1rem, 5vw, 4rem); margin: 0 0 12px; }
+.hero p { font-size: 1.08rem; margin-bottom: 20px; }
+.btn {
+  display: inline-block; background: var(--accent); color: #142433; font-weight: bold;
+  padding: 12px 18px; border-radius: 999px; margin-right: 10px;
+}
+.btn.outline { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.7); }
+section { padding: 68px 0; }
+.section-title {
+  text-align: center; margin-bottom: 28px;
+}
+.section-title h2 { margin: 0 0 10px; font-size: 2rem; color: var(--primary-dark); }
+.section-title p { margin: 0 auto; max-width: 760px; color: #4f6476; }
+.grid {
+  display: grid; gap: 22px;
+}
+.cards-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cards-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.card {
+  background: var(--white); border-radius: 22px; padding: 20px;
+  box-shadow: 0 10px 30px rgba(15, 76, 129, 0.08);
+}
+.card h3 { margin-top: 14px; color: var(--primary-dark); }
+.badge {
+  display: inline-block; background: var(--soft); color: var(--primary);
+  padding: 6px 10px; border-radius: 999px; font-size: 0.9rem; font-weight: bold;
+}
+.split {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 30px; align-items: center;
+}
+.list-check { padding-left: 18px; }
+.list-check li { margin-bottom: 8px; }
+.table-wrap { overflow-x: auto; }
+table {
+  width: 100%; border-collapse: collapse; background: var(--white);
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 76, 129, 0.08);
+}
+th, td { padding: 14px; text-align: left; border-bottom: 1px solid #e8eef4; }
+th { background: var(--primary); color: var(--white); }
+tr:hover td { background: #f9fbfd; }
+.gallery img { height: 220px; width: 100%; object-fit: cover; }
+.video-box iframe {
+  width: 100%; min-height: 360px; border: 0; border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(15, 76, 129, 0.12);
+}
+form {
+  background: var(--white); padding: 22px; border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(15, 76, 129, 0.08);
+}
+label { display: block; margin: 12px 0 6px; font-weight: bold; }
+input, textarea, select {
+  width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid #c9d6e2;
+  font: inherit;
+}
+textarea { min-height: 120px; resize: vertical; }
+button {
+  margin-top: 14px; background: var(--primary); color: var(--white); border: none;
+  padding: 12px 18px; border-radius: 12px; cursor: pointer;
+}
+footer {
+  background: var(--primary-dark); color: var(--white); padding: 28px 0; margin-top: 30px;
+}
+footer p { margin: 6px 0; }
+.note {
+  background: #fff9ea; border-left: 6px solid var(--accent); padding: 14px 16px; border-radius: 12px;
+}
+@media (max-width: 800px) {
+  .split { grid-template-columns: 1fr; }
+  .hero { min-height: 72vh; }
+  nav ul { gap: 8px; justify-content: flex-end; }
+  .video-box iframe { min-height: 240px; }
+}
